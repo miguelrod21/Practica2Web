@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../style/inicio.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -23,8 +23,9 @@
     </div>
 </nav>
 
-<div class="informacion">
-    <table class="table table-dark">
+<div class="col-4 informacion">
+    <h4>Información general</h4>
+    <table class="table table-dark ">
         <tr class="row">
             <td class="col">Nombre</td>
             <td class="col">Vigo</td>
@@ -39,44 +40,55 @@
         </tr>
     </table>
 </div>
-<div class="localizacion">
+<div class="col-4 localizacion">
 
 </div>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="https://cdn.theatlantic.com/assets/media/img/mt/2014/10/Whiplash/lead_720_405.jpg?mod=1533691710" alt="First slide">
+<d<div class="container">
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item w-100 active">
+                <img src="../resoruces/Vigo_panoramico.jpg" height="300px"  alt="First Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Vigo</h5>
+                    <p>Sumérgete con Turismo de Vigo en el encanto de la mayor ciudad de Galicia y descubre el corazón de las Rías Baixas</p>
+                </div>
+            </div>
+            <div class="carousel-item w-100">
+                <img src="../resoruces/vista-vigo.jpg" height="300px" alt="Second Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bienvenido a Vigo</h5>
+                    <p>Visita Vigo y déjate llevar por esta urbe singular que siempre deja huella.</p>
+                </div>
+            </div>
+            <div class="carousel-item w-100">
+                <img src="../resoruces/silabario-vigo.jpg" height="300px"  alt="Third Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Un mar de sabores</h5>
+                    <p>Comer en Vigo te sumergirá en un mar de sabores únicos.</p>
+                </div>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="https://i.ytimg.com/vi/xDAsABdkWSc/maxresdefault.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="http://malditosnerds.com/malditosBackend/web/uploads/posts/cover/Whiplash1.jpg" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="http://i.imgur.com/8ZFZW8C.jpg" alt="Fourth slide">
-        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="prevIcon" ></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="nextIcon" ></span>
+            <span class="sr-only"></span>
+        </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
 
-<script src=https://code.jquery.com/jquery-3.5.1.slim.min.js
-        integrity="sha384DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
