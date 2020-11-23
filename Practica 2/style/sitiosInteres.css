@@ -1,0 +1,38 @@
+
+body{
+    background-color:#474c51;
+
+}
+
+#tituloNavbar {
+    color: crimson;
+    font-size: 45px;
+}
+
+h1 {
+    background-color: crimson;
+    text-align: center;
+}
+
+.row {
+    width:100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0em 2em 0em;
+}
+
+.place-title {
+    color: crimson;
+    text-align: center;
+}
+
+.place-text{
+    text-align: justify;
+}
+
+.tarjeta{
+    width: 18rem;
+    margin-right:4rem;
+    margin-left: 4rem;
+}
