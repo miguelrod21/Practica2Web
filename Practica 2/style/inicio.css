@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+
+#tituloNavbar {
+	color: red;
+	font-size: 45px;
+}
+
+.divCarousel{
+    height:50%;
+}
+/* Crea tres columnas desiguales, una al lado de otra */
+.informacion{
+
+}
+.localizacion{
+
+}
