@@ -6,22 +6,26 @@ body{
 	color: red;
 	font-size: 45px;
 }
-.row{
+.row {
     margin-right: 0;
+    margin-left:0;
 }
 .divCarousel{
     height:50%;
 }
 /* Crea tres columnas desiguales, una al lado de otra */
-.informacion{
-
+.divPrincipal{
+    padding:10px 0 20px 0;
+    display:inline-flex;
 }
-.localizacion{
-
+.carousel-control-prev{
+    background-image: url('../resoruces/anterior.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.nextIcon{
-    background-image: url("../resoruces/proximo.png");
-}
-.prevIcon{
-    background-image: url("../resoruces/anterior.png");
+.carousel-control-next{background-image: url('../resoruces/proximo.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
