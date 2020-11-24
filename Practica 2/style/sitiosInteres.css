@@ -1,7 +1,6 @@
 
 body{
-    background-color:#474c51;
-
+    background-color: aliceblue;
 }
 
 #tituloNavbar {
@@ -15,11 +14,8 @@ h1 {
 }
 
 .row {
-    width:100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 2em 0em 2em 0em;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .place-title {
@@ -29,10 +25,30 @@ h1 {
 
 .place-text{
     text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.tarjeta{
-    width: 18rem;
-    margin-right:4rem;
-    margin-left: 4rem;
+.place-url {
+    text-align: center;
+}
+.place-img-top {
+    align-content: center;
+}
+
+.horarioYprecio{
+    height: min-content;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.horario {
+    color: crimson;
+    text-align: center;
+}
+.precio{
+    color: crimson;
+    text-align: center;
 }
