@@ -6,7 +6,9 @@ body{
 	color: crimson;
 	font-size: 45px;
 }
-
+.row{
+    margin-right: 0;
+}
 .divCarousel{
     height:50%;
 }
@@ -16,4 +18,10 @@ body{
 }
 .localizacion{
 
+}
+.nextIcon{
+    background-image: url("../resoruces/proximo.png");
+}
+.prevIcon{
+    background-image: url("../resoruces/anterior.png");
 }
