@@ -8,9 +8,11 @@ body{
     font-size: 45px;
 }
 
-h1 {
+.titulo {
     background-color: crimson;
     text-align: center;
+    padding: 7px;
+    margin-bottom: 0;
 }
 
 .row {
@@ -33,16 +35,18 @@ h1 {
     text-align: center;
 }
 .place-img-top {
-    align-content: center;
+    display: block;
+    margin: auto;
 }
 
 .horarioYprecio{
     height: min-content;
     width: 50%;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    display: block;
+    margin: auto;
 }
+
 
 .horario {
     color: crimson;
@@ -51,4 +55,17 @@ h1 {
 .precio{
     color: crimson;
     text-align: center;
+}
+
+.principal {
+    display: block;
+    margin: auto;
+    background-color: #d5d5d5;
+}
+.col1 {
+    padding-right: 3px;
+}
+
+.col2 {
+    padding-left: 3px;
 }
