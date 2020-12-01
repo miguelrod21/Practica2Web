@@ -2,7 +2,7 @@ $(function () {
 
     $(".rateyo").rateYo(
         {
-            rating: 4
+            rating: 3
         }
     );
     $(".rateyo1").rateYo(
