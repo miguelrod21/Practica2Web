@@ -5,6 +5,7 @@
     <title>Sitios de Interés</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
     <link rel="stylesheet" type="text/css" href="../style/sitiosInteres.css">
 </head>
 <body>
@@ -95,6 +96,44 @@
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="center block">
+                        <h2>Valoración media</h2>
+                        <div class="rateyo rating"></div>
+                        <p>
+                            <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
+                                   onclick="changeText()" type="button"
+                                   data-toggle="collapse" data-target="#collapseValoraciones" aria-expanded="false"
+                                   aria-controls="collapseExample"/>
+                        </p>
+                        <div class="collapse" id="collapseValoraciones">
+                            <div class="card card-body">
+                                <div class="ratingIndividual rateyo1"></div>
+                                <p class="user"><strong>Anónimo</strong></p>
+                                Fuimos de vacaciones con la familia a pasar el mes de Julio. Estuvo lloviendo 25 de los 30 días que pasamos y casi no podiamos salir ni del hotel. La comida
+                                puede ser lo único que se salva, ya que la playa ni la pudimos pisar. La gente fría y sin sentimientos ni emociones. Como en mi Sevilla en ningún sitio. Como dice
+                                el dicho "Más vale lo malo conocido que lo bueno por conocer".
+                            </div>
+                            <div class="card card-body">
+                                <div class="rateyo2 ratingIndividual"></div>
+                                <p class="user"><strong>Elena Fernández</strong></p>
+                                Vigo es un lugar encantador. Estuvimos 5 amigos disfrutando de la montaña en una casa rural. Conocimos gente de las aldeas cercanas y probamos todo tipo de comida.
+                                Sin embargo es una pena el mal tiempo que suele hacer. Esperemos que la próxima nos haga mejor.
+                            </div>
+                            <div class="card card-body">
+                                <div class="rateyo3 ratingIndividual"></div>
+                                <p class="user"><strong>Carlota Menéndez</strong></p>
+                                Una mierda de lugar y de gente. La comida ya ni hablamos.
+                            </div>
+                            <div class="card card-body">
+                                <div class="rateyo4 ratingIndividual"></div>
+                                <p class="user"><strong>Miguel Rodriguez</strong></p>
+                                Vigo es un lugar encantador. Estuvimos 5 amigos disfrutando de la montaña en una casa rural. Conocimos gente de las aldeas cercanas y probamos todo tipo de comida.
+                                Estoy deseando poder volver y conocer más sitios así.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -102,5 +141,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+<script src="../javascript/rateyo.js"></script>
 </body>
 </html>
