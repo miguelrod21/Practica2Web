@@ -1,6 +1,7 @@
 
 body{
     background-color: aliceblue;
+    text-align: center;
 }
 
 #tituloNavbar {
@@ -50,7 +51,9 @@ body{
     margin: auto;
 }
 
-
+.user{
+    text-align: left;
+}
 .horario {
     color: crimson;
     text-align: center;
@@ -71,4 +74,13 @@ body{
 
 .col2 {
     padding-left: 3px;
+}
+.rating{
+    margin: 10px auto
+}
+.ratingIndividual{
+    margin-left:0
+}
+.collapse{
+    margin-bottom:20px
 }
