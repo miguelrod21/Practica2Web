@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/style-albe-timeline.css">
     <link rel="stylesheet" type="text/css" href="../style/sitiosInteres.css">
+
 </head>
 <body>
 <nav class="navbar navbar-expand navbar-dark bg-dark">
@@ -73,91 +75,97 @@
                         información Casa de las Artes</a></p>
                 </div>
             </div>
-            <div class="place-body">
-                <div class="horarioYprecio">
-                    <div class="row">
-                        <div class="col1">
-                            <table class="table table-dark">
-                                <tr class="horario">
-                                    <th>Horario</th>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col">Lunes a Viernes</td>
-                                    <td class="col">18:00-21:00</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col">Sábados</td>
-                                    <td class="col">12:00-21:00</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col">Domingos y Festivos</td>
-                                    <td class="col">Cerrado</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col2">
-                            <table class="table table-dark">
-                                <tr class="precio">
-                                    <th>Precio</th>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col">Menores de 10 años</td>
-                                    <td class="col">Gratis</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col">Adultos</td>
-                                    <td class="col">7,5€</td>
-                                </tr>
-                                <tr class="row">
-                                    <td class="col">Mayores de 65 años</td>
-                                    <td class="col">5€</td>
-                                </tr>
-                            </table>
-                        </div>
+            <div class="horarioYprecio">
+                <div class="row">
+                    <div class="col1">
+                        <table class="table table-dark">
+                            <tr class="horario">
+                                <th>Horario</th>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Lunes a Viernes</td>
+                                <td class="col">18:00-21:00</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Sábados</td>
+                                <td class="col">12:00-21:00</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Domingos y Festivos</td>
+                                <td class="col">Cerrado</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col2">
+                        <table class="table table-dark">
+                            <tr class="precio">
+                                <th>Precio</th>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Menores de 10 años</td>
+                                <td class="col">Gratis</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Adultos</td>
+                                <td class="col">7,5€</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="col">Mayores de 65 años</td>
+                                <td class="col">5€</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="center block">
-                        <h2>Valoración media</h2>
-                        <div class="rating" id="ratecasa"></div>
-                        <p>
-                            <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
-                                   onclick="changeText()" type="button"
-                                   data-toggle="collapse" data-target="#collapseValoraciones" aria-expanded="false"
-                                   aria-controls="collapseExample"/>
-                        </p>
-                        <div class="collapse" id="collapseValoraciones">
-                            <div class="card card-body">
-                                <div class="ratingIndividual rate1casa"></div>
-                                <p class="user"><strong>Anónimo</strong></p>
-                                Historia de Vigo. Soy arquitecto y me parece un edificio precioso. Más aún cuando ha
-                                sido tan importante para Vigo y para España.
-                            </div>
-                            <div class="card card-body">
-                                <div class="rate2casa ratingIndividual"></div>
-                                <p class="user"><strong>Joaquín Pérez</strong></p>
-                                Se trata de un edificio importante para Vigo, pero si vienes a pasar pocos días no es
-                                una visita obligada.
-                            </div>
-                            <div class="card card-body">
-                                <div class="rate3casa ratingIndividual"></div>
-                                <p class="user"><strong>Anónimo</strong></p>
-                                Quisimos entrar a ver el edificio y había muchísima cola. Tras hora y media esperando
-                                cuando nos tocó resultó ser la hora del cierre. La gente fue muy maleducada.
-                            </div>
+            </div>
+            <div class="col">
+                <h3>Información histórica</h3>
+                <p>A lo largo de toda la historia la Casa de las Artes ha presenciado multitud de eventos e historias. </br>Puedes ir directamente al año que te interesa pulsando a continuación:</p>
+                <div id="TimeLineCasa"></div>
+            </div>
+            <div class="col">
+                <div class="center block">
+                    <h2>Valoración media</h2>
+                    <div class="rating" id="ratecasa"></div>
+                    <p>
+                        <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
+                               onclick="changeText()" type="button"
+                               data-toggle="collapse" data-target="#collapseValoraciones" aria-expanded="false"
+                               aria-controls="collapseExample"/>
+                    </p>
+                    <div class="collapse" id="collapseValoraciones">
+                        <div class="card card-body">
+                            <div class="ratingIndividual rate1casa"></div>
+                            <p class="user"><strong>Anónimo</strong></p>
+                            Historia de Vigo. Soy arquitecto y me parece un edificio precioso. Más aún cuando ha
+                            sido tan importante para Vigo y para España.
+                        </div>
+                        <div class="card card-body">
+                            <div class="rate2casa ratingIndividual"></div>
+                            <p class="user"><strong>Joaquín Pérez</strong></p>
+                            Se trata de un edificio importante para Vigo, pero si vienes a pasar pocos días no es
+                            una visita obligada.
+                        </div>
+                        <div class="card card-body">
+                            <div class="rate3casa ratingIndividual"></div>
+                            <p class="user"><strong>Anónimo</strong></p>
+                            Quisimos entrar a ver el edificio y había muchísima cola. Tras hora y media esperando
+                            cuando nos tocó resultó ser la hora del cierre. La gente fue muy maleducada.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+<script src="../javascript/jquery-albe-timeline.js"></script>
 <script src="../javascript/rateyo.js"></script>
 <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
 <script src="../javascript/SitiosYActividades.js"></script>
+<script src="../javascript/data-albe-timeline.js"></script>
 </body>
 </html>

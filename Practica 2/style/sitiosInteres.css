@@ -1,6 +1,5 @@
 
 body{
-    background-color: aliceblue;
     text-align: center;
 }
 
@@ -50,6 +49,10 @@ body{
     display: block;
     margin: auto;
 }
+#myTimeline{
+    background-color: #c1c1c1;
+
+}
 
 .user{
     text-align: left;
@@ -80,7 +83,4 @@ body{
 }
 .ratingIndividual{
     margin-left:0
-}
-.collapse{
-    margin-bottom:20px
 }
