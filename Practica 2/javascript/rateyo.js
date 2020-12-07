@@ -13,6 +13,17 @@ $(function () {
     $(".rate1casa").rateYo({rating: 4,starWidth: "20px"});
     $(".rate2casa").rateYo({rating: 3,starWidth: "20px"});
     $(".rate3casa").rateYo({rating: 2,starWidth: "20px"});
+
+    $("#rateEntroido").rateYo({rating: 4.5});
+    $(".rate1entroido").rateYo({rating: 4,starWidth: "20px",marginLeft:0});
+    $(".rate2entroido").rateYo({rating: 5,starWidth: "20px",marginLeft:0});
+
+    $("#rateTour").rateYo({rating: 4});
+    $(".rate1tour").rateYo({rating: 5,starWidth: "20px",marginLeft:0});
+    $(".rate2tour").rateYo({rating: 3,starWidth: "20px",marginLeft:0});
+
+    $("#ratesurf").rateYo({rating: 5});
+    $(".rate1surf").rateYo({rating: 5,starWidth: "20px",marginLeft:0});
 });
 
 function changeText() {
