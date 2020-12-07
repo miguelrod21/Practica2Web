@@ -1,6 +1,5 @@
 
 body{
-    background-color: aliceblue;
     text-align: center;
 }
 
@@ -49,6 +48,10 @@ body{
     text-align: center;
     display: block;
     margin: auto;
+}
+#myTimeline{
+    background-color: #c1c1c1;
+
 }
 
 .user{
