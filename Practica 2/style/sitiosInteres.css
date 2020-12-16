@@ -57,6 +57,11 @@ body{
 .user{
     text-align: left;
 }
+.titinfo{
+    background-color: crimson;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
 .horario {
     color: crimson;
     text-align: center;
@@ -83,4 +88,13 @@ body{
 }
 .ratingIndividual{
     margin-left:0
+}
+.center{
+    font-family: "Comic Sans MS";
+}
+.card-body{
+    text-align: justify;
+}
+.info{
+    text-align: justify;
 }
