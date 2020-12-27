@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Sitios de Interés</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../style/style-albe-timeline.css">
     <link rel="stylesheet" type="text/css" href="../style/sitiosInteres.css">
 </head>
-<body>
+<body vocab="http://schema.org/" typeof="Museum Product">
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" id='tituloNavbar' href="index.html">V I G O</a>
@@ -50,28 +50,28 @@
     </div>
 </nav>
 
-<h1 class="titulo"><strong>Sitios de Interés</strong></h1>
+<h1 property="alternateName" class="titulo"><strong>Sitios de Interés</strong></h1>
 <div class="container principal">
     <div class=' row'>
         <div class="col">
-            <h2 class="place-title"><strong>Mirador Monte O castro</strong></h2>
+            <h2 property="name" class="place-title"><strong>Mirador Monte O castro</strong></h2>
             <div class="row">
                 <div class="col">
-                    <img class="place-img-top" alt="image-mirador"
+                    <img property="image" class="place-img-top" alt="image-mirador"
                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Vigo-O_Castro-A_los_Galeones_de_Rande_%288739869553%29.jpg/1024px-Vigo-O_Castro-A_los_Galeones_de_Rande_%288739869553%29.jpg"
                          width="440" height="340">
                 </div>
                 <div class="col">
-                    <p class="place-text">O Castro es el parque con las mejores vistas de Vigo sobre la ría. No es el
+                    <p property="description" class="place-text">O Castro es el parque con las mejores vistas de Vigo sobre la ría. No es el
                         clásico jardín urbano, sino un hermoso monte, justo en el corazón de Vigo, que es el punto de
                         origen de la ciudad, donde se asentaron los primeros pobladores. Si te interesa la arqueología,
                         en la ladera más baja del monte puedes visitar su yacimiento castreño y ver cómo era la vida en
                         Vigo entre los siglos III y I a.C.</p>
-                    <p class="place-text">Puede que te cueste subir a pie a O Castro, pero la recompensa es inmejorable.
+                    <p property="description" class="place-text">Puede que te cueste subir a pie a O Castro, pero la recompensa es inmejorable.
                         De camino, encontrarás las enormes anclas que recuerdan la Batalla de Rande. Podrás tomar un
                         aperitivo admirando las vistas de la ciudad, descubrir sus áreas deportivas, donde practicar
                         skate, y sus parques infantiles.</p>
-                    <p class="place-url"><a href="https://www.turismodevigo.org/es/monte-de-o-castro">Enlace información
+                    <p property="mainEntityOfPage" class="place-url"><a property="url" href="https://www.turismodevigo.org/es/monte-de-o-castro">Enlace información
                         Mirador Monte O Castro</a></p>
                 </div>
             </div>
@@ -118,8 +118,8 @@
                 </div>
             </div>
             <div class="col">
-                <h3 class="titinfo"><strong>Información histórica</strong></h3>
-                <p class="info">El mirador ha contemplado numerosos hitos históricos y lleva muchísimo tiempo con nosotros. Aquí te
+                <h3 property="name" class="titinfo"><strong>Información histórica</strong></h3>
+                <p property="description" class="info">El mirador ha contemplado numerosos hitos históricos y lleva muchísimo tiempo con nosotros. Aquí te
                     explicamos brevemente su historia.Puedes ir directamente a la fecha que te interesa pulsando a
                     continuación:</p>
                 <div id="TimeLineMirador"></div>

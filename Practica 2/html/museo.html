@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Sitios de Interés</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../style/sitiosInteres.css">
     <link rel="stylesheet" type="text/css" href="../style/style-albe-timeline.css">
 </head>
-<body>
+<body vocab="http://schema.org/" typeof="Museum Product">
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" id='tituloNavbar' href="index.html">V I G O</a>
@@ -50,19 +50,19 @@
     </div>
 </nav>
 
-<h1 class="titulo"><strong>Sitios de Interés</strong></h1>
+<h1 property="alternateName" class="titulo"><strong>Sitios de Interés</strong></h1>
 <div class="container principal">
     <div class='row'>
         <div class="col">
-            <h2 class="place-title"><strong>Museo de Arte Contemporáneo</strong></h2>
+            <h2 property="name" class="place-title"><strong>Museo de Arte Contemporáneo</strong></h2>
             <div class="row">
                 <div class="col">
-                    <img class="place-img-top" alt="image-museo" src="https://cflvdg.avoz.es/sc/-YHio9yygP1ZNXshswZbcdN4ORo=/x/2017/11/18/00121511038021460931576/Foto/J09J7024.jpg" width="450" height="400">
+                    <img property="image" class="place-img-top" alt="image-museo" src="https://cflvdg.avoz.es/sc/-YHio9yygP1ZNXshswZbcdN4ORo=/x/2017/11/18/00121511038021460931576/Foto/J09J7024.jpg" width="450" height="400">
                 </div>
                 <div class="col">
-                    <p class="place-text">El Museo de Arte Contemporáneo de Vigo (MARCO) es un museo de arte contemporáneo inaugurado el 13 de noviembre de 2002 en la ciudad de Vigo, Galicia, España.</p>
-                    <p class="place-text">Las actividades principales, en torno a las que se articula la programación museística, son las exposiciones temporales dedicadas a la producción artística reciente en sus más variados campos creativos. Éstas se enmarcan en tres líneas de programación prioritarias: muestras pluridisciplinares, sobre arte y cultura en el ámbito nacional e internacional; investigaciones y revisiones históricas que fomenten la recuperación de autores o movimientos artísticos gallegos unidos a lenguajes vanguardistas; y, por último, la sala de exposiciones del Edificio Anexo, dedicada a la producción de proyectos de artistas emergentes gallegos.</p>
-                    <p class="place-url"><a href="http://www.marcovigo.com/">Enlace información Playa de Samil</a></p>
+                    <p property="description" class="place-text">El Museo de Arte Contemporáneo de Vigo (MARCO) es un museo de arte contemporáneo inaugurado el 13 de noviembre de 2002 en la ciudad de Vigo, Galicia, España.</p>
+                    <p property="description" class="place-text">Las actividades principales, en torno a las que se articula la programación museística, son las exposiciones temporales dedicadas a la producción artística reciente en sus más variados campos creativos. Éstas se enmarcan en tres líneas de programación prioritarias: muestras pluridisciplinares, sobre arte y cultura en el ámbito nacional e internacional; investigaciones y revisiones históricas que fomenten la recuperación de autores o movimientos artísticos gallegos unidos a lenguajes vanguardistas; y, por último, la sala de exposiciones del Edificio Anexo, dedicada a la producción de proyectos de artistas emergentes gallegos.</p>
+                    <p property="mainEntityOfPage" class="place-url"><a property="url" href="http://www.marcovigo.com/">Enlace información Playa de Samil</a></p>
                 </div>
             </div>
             <div class="place-body">
@@ -105,8 +105,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <h3 class="titinfo"><strong>Información general</strong></h3>
-                    <p class="info">Aquí podrás encontrar las distintas actividades que se han podido presenciar en este museo. Puedes ir directamente a la fecha que te interesa pulsando a continuación:</p>
+                    <h3 property="name" class="titinfo"><strong>Información general</strong></h3>
+                    <p property="description" class="info">Aquí podrás encontrar las distintas actividades que se han podido presenciar en este museo. Puedes ir directamente a la fecha que te interesa pulsando a continuación:</p>
                     <div id="TimeLineMuseo"></div>
                 </div>
                 <div property="aggregateRating" typeof="AggregateRating" class="col">
