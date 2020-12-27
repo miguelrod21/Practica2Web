@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Sitios de Interés</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../style/sitiosInteres.css">
 
 </head>
-<body>
+<body vocab="http://schema.org/" typeof="Sitio">
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" id='tituloNavbar' href="index.html">V I G O</a>
@@ -51,33 +51,33 @@
     </div>
 </nav>
 
-<h1 class="titulo"><strong>Sitios de Interés</strong></h1>
-<div class="container principal">
+<h1 property="title" class="titulo"><strong>Sitios de Interés</strong></h1>
+<div vocab="http://schema.org/" typeof="Sitio" class="container principal">
     <div class="row">
         <div class="col">
-            <h2 class="place-title"><strong>Casa de las Artes</strong></h2>
+            <h2 property="name" class="place-title"><strong>Casa de las Artes</strong></h2>
             <div class="row">
                 <div class="col">
-                    <img class="place-img-top" alt="image-casa"
+                    <img property="image" class="place-img-top" alt="image-casa"
                          src="https://www.vigoalminuto.com/wp-content/uploads/2010/12/Casa-das-Artes.JPG" width="440"
                          height="340">
                 </div>
                 <div class="col">
-                    <p class="place-text">Edificio racionalista del año 1939, proyectado por Romualdo de Madariaga. Fue
+                    <p property="description" class="place-text">Edificio racionalista del año 1939, proyectado por Romualdo de Madariaga. Fue
                         concebido como Banco de España hasta que el Ministerio de Economía y Hacienda decide eliminar
                         todas las sucursales que no estén en capitales de provincia.</p>
-                    <p class="place-text">La Casa das Artes, que comenzó su andadura en 1990, constituye desde entonces
+                    <p property="description" class="place-text">La Casa das Artes, que comenzó su andadura en 1990, constituye desde entonces
                         el principal espacio destinado a albergar exposiciones temporales municipales. De esta forma,
                         sus salas han acogido muestras de artes plásticas, arquitectura y fotografía, entre otras
                         disciplinas artísticas, tanto de arte gallego contemporáneo como de las vanguardias artísticas
                         más internacionales del siglo XX.</p>
-                    <p class="place-url"><a href="https://hoxe.vigo.org/conecenos/m_artes.php?lang=cas#/=">Enlace
+                    <p property="link" class="place-url"><a property="url" href="https://hoxe.vigo.org/conecenos/m_artes.php?lang=cas#/=">Enlace
                         información Casa de las Artes</a></p>
                 </div>
             </div>
-            <div class="horarioYprecio">
+            <div property="timeAndPrice" typeof="TimeAndPrice" class="horarioYprecio">
                 <div class="row">
-                    <div class="col1">
+                    <div property="time" typeof="Time" class="col1">
                         <table class="table table-dark">
                             <tr class="horario">
                                 <th>Horario</th>
@@ -96,7 +96,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="col2">
+                    <div property="price" typeof="Price" class="col2">
                         <table class="table table-dark">
                             <tr class="precio">
                                 <th>Precio</th>
@@ -118,38 +118,38 @@
                 </div>
             </div>
             <div class="col">
-                <h3 class="titinfo"><strong>Información histórica</strong></h3>
-                <p class="info">A lo largo de toda la historia la Casa de las Artes ha presenciado multitud de eventos e historias. Puedes ir directamente al año que te interesa pulsando a continuación:</p>
+                <h3 property="history" class="titinfo"><strong>Información histórica</strong></h3>
+                <p property="description" class="info">A lo largo de toda la historia la Casa de las Artes ha presenciado multitud de eventos e historias. Puedes ir directamente al año que te interesa pulsando a continuación:</p>
                 <div id="TimeLineCasa"></div>
             </div>
-            <div class="col">
+            <div property="rating" typeof="Rating" class="col">
                 <div class="center block">
-                    <h2>Valoración media</h2>
-                    <div class="rating" id="ratecasa"></div>
-                    <p>
+                    <h2 property="title">Valoración media</h2>
+                    <div property="aggregateRating" typeof="AggregateRating" class="rating" id="ratecasa"></div>
+                    <p property="input">
                         <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
                                onclick="changeText()" type="button"
                                data-toggle="collapse" data-target="#collapseValoraciones" aria-expanded="false"
                                aria-controls="collapseExample"/>
                     </p>
                     <div class="collapse" id="collapseValoraciones">
-                        <div class="card card-body">
+                        <div property="ratingDescription" typeof="RatingDescription" class="card card-body">
                             <div class="ratingIndividual rate1casa"></div>
-                            <p class="user"><strong>Anónimo</strong></p>
-                            Historia de Vigo. Soy arquitecto y me parece un edificio precioso. Más aún cuando ha
-                            sido tan importante para Vigo y para España.
+                            <p property="name" class="user"><strong>Anónimo</strong></p>
+                            <span property="description">Historia de Vigo. Soy arquitecto y me parece un edificio precioso. Más aún cuando ha
+                                sido tan importante para Vigo y para España.</span>
                         </div>
-                        <div class="card card-body">
+                        <div property="ratingDescription" typeof="RatingDescription"  class="card card-body">
                             <div class="rate2casa ratingIndividual"></div>
-                            <p class="user"><strong>Joaquín Pérez</strong></p>
-                            Se trata de un edificio importante para Vigo, pero si vienes a pasar pocos días no es
-                            una visita obligada.
+                            <p property="name" class="user"><strong>Joaquín Pérez</strong></p>
+                            <span property="description">Se trata de un edificio importante para Vigo, pero si vienes a pasar pocos días no es
+                            una visita obligada.</span>
                         </div>
-                        <div class="card card-body">
+                        <div property="ratingDescription" typeof="RatingDescription" class="card card-body">
                             <div class="rate3casa ratingIndividual"></div>
-                            <p class="user"><strong>Anónimo</strong></p>
-                            Quisimos entrar a ver el edificio y había muchísima cola. Tras hora y media esperando
-                            cuando nos tocó resultó ser la hora del cierre. La gente fue muy maleducada.
+                            <p property="name" class="user"><strong>Anónimo</strong></p>
+                            <span property="description">Quisimos entrar a ver el edificio y había muchísima cola. Tras hora y media esperando
+                            cuando nos tocó resultó ser la hora del cierre. La gente fue muy maleducada.</span>
                         </div>
                     </div>
                 </div>
