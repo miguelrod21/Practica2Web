@@ -90,9 +90,9 @@
                         </table>
                     </div>
                 </div>
-                <div class="col">
+                <div property="aggregateRating" typeof="AggregateRating" class="col">
                     <div class="center block">
-                        <h2>Valoración media</h2>
+                        <h2 property="ratingValue">Valoración media</h2>
                         <div class="rating" id="rateEntroido"></div>
                         <p>
                             <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
@@ -101,15 +101,15 @@
                                    aria-controls="collapseExample"/>
                         </p>
                         <div class="collapse" id="collapseValoraciones">
-                            <div class="card card-body">
+                            <div property="reviewAspect" class="card card-body">
                                 <div class="ratingIndividual rate1entroido"></div>
-                                <p class="user"><strong>Anónimo</strong></p>
-                                ¡Genial fiesta tradicional en la que cada año se mejora el ambiente y la gente!
+                                <p property="name" class="user"><strong>Anónimo</strong></p>
+                                <span property="ratingExplanation">¡Genial fiesta tradicional en la que cada año se mejora el ambiente y la gente!</span>
                             </div>
-                            <div class="card card-body">
+                            <div property="reviewAspect" class="card card-body">
                                 <div class="rate2entroido ratingIndividual"></div>
-                                <p class="user"><strong>Fernando Marín</strong></p>
-                                ¡Vivo cada día del año esperando que lleguen estas fiestas!
+                                <p property="name" class="user"><strong>Fernando Marín</strong></p>
+                                <span property="ratingExplanation">¡Vivo cada día del año esperando que lleguen estas fiestas!</span>
                             </div>
                         </div>
                     </div>

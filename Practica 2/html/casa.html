@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../style/sitiosInteres.css">
 
 </head>
-<body vocab="http://schema.org/" typeof="Sitio">
+<body vocab="http://schema.org/" typeof="Place">
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" id='tituloNavbar' href="index.html">V I G O</a>
@@ -52,7 +52,7 @@
 </nav>
 
 <h1 property="title" class="titulo"><strong>Sitios de Interés</strong></h1>
-<div vocab="http://schema.org/" typeof="Sitio" class="container principal">
+<div class="container principal">
     <div class="row">
         <div class="col">
             <h2 property="name" class="place-title"><strong>Casa de las Artes</strong></h2>
@@ -122,33 +122,33 @@
                 <p property="description" class="info">A lo largo de toda la historia la Casa de las Artes ha presenciado multitud de eventos e historias. Puedes ir directamente al año que te interesa pulsando a continuación:</p>
                 <div id="TimeLineCasa"></div>
             </div>
-            <div property="rating" typeof="Rating" class="col">
+            <div property="aggregateRating" typeof="AggregateRating" class="col">
                 <div class="center block">
-                    <h2 property="title">Valoración media</h2>
-                    <div property="aggregateRating" typeof="AggregateRating" class="rating" id="ratecasa"></div>
-                    <p property="input">
+                    <h2 property="ratingValue">Valoración media</h2>
+                    <div class="rating" id="ratecasa"></div>
+                    <p>
                         <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
                                onclick="changeText()" type="button"
                                data-toggle="collapse" data-target="#collapseValoraciones" aria-expanded="false"
                                aria-controls="collapseExample"/>
                     </p>
                     <div class="collapse" id="collapseValoraciones">
-                        <div property="ratingDescription" typeof="RatingDescription" class="card card-body">
+                        <div property="reviewAspect" class="card card-body">
                             <div class="ratingIndividual rate1casa"></div>
                             <p property="name" class="user"><strong>Anónimo</strong></p>
-                            <span property="description">Historia de Vigo. Soy arquitecto y me parece un edificio precioso. Más aún cuando ha
+                            <span property="ratingExplanation">Historia de Vigo. Soy arquitecto y me parece un edificio precioso. Más aún cuando ha
                                 sido tan importante para Vigo y para España.</span>
                         </div>
-                        <div property="ratingDescription" typeof="RatingDescription"  class="card card-body">
+                        <div property="reviewAspect" class="card card-body">
                             <div class="rate2casa ratingIndividual"></div>
                             <p property="name" class="user"><strong>Joaquín Pérez</strong></p>
-                            <span property="description">Se trata de un edificio importante para Vigo, pero si vienes a pasar pocos días no es
+                            <span property="ratingExplanation">Se trata de un edificio importante para Vigo, pero si vienes a pasar pocos días no es
                             una visita obligada.</span>
                         </div>
-                        <div property="ratingDescription" typeof="RatingDescription" class="card card-body">
+                        <div property="reviewAspect" class="card card-body">
                             <div class="rate3casa ratingIndividual"></div>
                             <p property="name" class="user"><strong>Anónimo</strong></p>
-                            <span property="description">Quisimos entrar a ver el edificio y había muchísima cola. Tras hora y media esperando
+                            <span property="ratingExplanation">Quisimos entrar a ver el edificio y había muchísima cola. Tras hora y media esperando
                             cuando nos tocó resultó ser la hora del cierre. La gente fue muy maleducada.</span>
                         </div>
                     </div>

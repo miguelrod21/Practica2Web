@@ -109,9 +109,9 @@
                     <p class="info">Aquí podrás encontrar las distintas actividades que se han podido presenciar en este museo. Puedes ir directamente a la fecha que te interesa pulsando a continuación:</p>
                     <div id="TimeLineMuseo"></div>
                 </div>
-                <div class="col">
+                <div property="aggregateRating" typeof="AggregateRating" class="col">
                     <div class="center block">
-                        <h2>Valoración media</h2>
+                        <h2 property="ratingValue">Valoración media</h2>
                         <div class="rating" id="ratemuseo"></div>
                         <p>
                             <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
@@ -120,15 +120,15 @@
                                    aria-controls="collapseExample"/>
                         </p>
                         <div class="collapse" id="collapseValoraciones">
-                            <div class="card card-body">
+                            <div property="reviewAspect" class="card card-body">
                                 <div class="ratingIndividual rate1museo"></div>
-                                <p class="user"><strong>Anónimo</strong></p>
-                                Museo muy interesante que visitar. Suelo ir con mis amigas de vez en cuando a hacer las distintas actividades que proponen entre semana.
+                                <p property="name" class="user"><strong>Anónimo</strong></p>
+                                <span property="ratingExplanation">Museo muy interesante que visitar. Suelo ir con mis amigas de vez en cuando a hacer las distintas actividades que proponen entre semana.</span>
                             </div>
-                            <div class="card card-body">
+                            <div property="reviewAspect" class="card card-body">
                                 <div class="rate2museo ratingIndividual"></div>
-                                <p class="user"><strong>Elena Fernández</strong></p>
-                                Muy bonito. Me encanta el arte contemporáneo pero considero que podrían añadir más cosas. Sales al final con ganas de más.
+                                <p property="name" class="user"><strong>Elena Fernández</strong></p>
+                                <span property="ratingExplanation">Muy bonito. Me encanta el arte contemporáneo pero considero que podrían añadir más cosas. Sales al final con ganas de más.</span>
                             </div>
                         </div>
                     </div>
