@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../style/sitiosInteres.css">
 
 </head>
-<body vocab="http://schema.org/" typeof="Place">
+<body vocab="http://schema.org/" typeof="Place Product">
 <nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" id='tituloNavbar' href="index.html">V I G O</a>
@@ -75,43 +75,43 @@
                         información Casa de las Artes</a></p>
                 </div>
             </div>
-            <div property="timeAndPrice" class="horarioYprecio">
+            <div class="horarioYprecio">
                 <div class="row">
-                    <div property="time" class="col1">
+                    <div class="col1">
                         <table class="table table-dark">
                             <tr class="horario">
                                 <th>Horario</th>
                             </tr>
                             <tr class="row">
-                                <td class="col">Lunes a Viernes</td>
+                                <td class="col"><span property="openingHours" content="Mo,Fr 18:00-21:00">Lunes a Viernes</td>
                                 <td class="col">18:00-21:00</td>
                             </tr>
                             <tr class="row">
-                                <td class="col">Sábados</td>
+                                <td class="col"><span property="openingHours" content="Su 12:00-21:00">Sábados</td>
                                 <td class="col">12:00-21:00</td>
                             </tr>
                             <tr class="row">
-                                <td class="col">Domingos y Festivos</td>
+                                <td class="col"><span property="openingHours" content="">Domingos y Festivos</td>
                                 <td class="col">Cerrado</td>
                             </tr>
                         </table>
                     </div>
-                    <div property="price"class="col2">
+                    <div property="offers" typeof="Offer" class="col2">
                         <table class="table table-dark">
                             <tr class="precio">
                                 <th>Precio</th>
                             </tr>
                             <tr class="row">
-                                <td class="col">Menores de 10 años</td>
-                                <td class="col">Gratis</td>
+                                <td class="col" property="description">Menores de 10 años</td>
+                                <td class="col" property="price" content="0.00">Gratis</td>
                             </tr>
                             <tr class="row">
-                                <td class="col">Adultos</td>
-                                <td class="col">7,5€</td>
+                                <td class="col" property="description">Adultos</td>
+                                <td class="col" property="price" content="7.5">7,5€</td>
                             </tr>
                             <tr class="row">
-                                <td class="col">Mayores de 65 años</td>
-                                <td class="col">5€</td>
+                                <td class="col" property="description">Mayores de 65 años</td>
+                                <td class="col" property="price" content="5.00">5€</td>
                             </tr>
                         </table>
                     </div>
