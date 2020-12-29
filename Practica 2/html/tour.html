@@ -109,8 +109,9 @@
                 </div>
                 <div property="aggregateRating" typeof="AggregateRating" class="col">
                     <div class="center block">
-                        <h2 property="ratingValue">Valoración media</h2>
+                        <h2>Valoración media: <span property="ratingValue">4</span></h2>
                         <div class="rating" id="rateTour"></div>
+                        <p><span property="reviewCount">2</span> Valoraciones</p>
                         <p>
                             <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
                                    onclick="changeText()" type="button"
@@ -119,13 +120,13 @@
                         </p>
                         <div class="collapse" id="collapseValoraciones">
                             <div property="reviewAspect" class="card card-body">
-                                <div class="ratingIndividual rate1tour"></div>
+                                <div class="ratingIndividual rate1tour"><meta property="ratingValue" content="5"></div>
                                 <p property="name" class="user"><strong>Marta Díaz</strong></p>
                                 <span property="ratingExplanation">¡Increíble tour! La guía era muy simpática y la comida fue espectacular. Pasamos un día
                                     muy agradable.</span>
                             </div>
                             <div property="reviewAspect" class="card card-body">
-                                <div class="rate2tour ratingIndividual"></div>
+                                <div class="rate2tour ratingIndividual"><meta property="ratingValue" content="3"></div>
                                 <p property="name" class="user"><strong>Anónimo</strong></p>
                                 <span property="ratingExplanation">Buen tour donde te llevan a comer y beber buen marisco y vino, sin embargo el precio me
                                     parece excesivo para lo que tuvimos.</span>

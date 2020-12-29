@@ -91,8 +91,9 @@
                 </div>
                 <div property="aggregateRating" typeof="AggregateRating" class="col">
                     <div class="center block">
-                        <h2 property="ratingValue">Valoración media</h2>
+                        <h2>Valoración media: <span property="ratingValue">4.5</span></h2>
                         <div class="rating" id="rateEntroido"></div>
+                        <p><span property="reviewCount">2</span> Valoraciones</p>
                         <p>
                             <input class="btn btn-primary" id="btnValoracion" value="Ver valoraciones"
                                    onclick="changeText()" type="button"
@@ -101,12 +102,12 @@
                         </p>
                         <div class="collapse" id="collapseValoraciones">
                             <div property="reviewAspect" class="card card-body">
-                                <div class="ratingIndividual rate1entroido"></div>
+                                <div class="ratingIndividual rate1entroido"><meta property="ratingValue" content="4"></div>
                                 <p property="name" class="user"><strong>Anónimo</strong></p>
                                 <span property="ratingExplanation">¡Genial fiesta tradicional en la que cada año se mejora el ambiente y la gente!</span>
                             </div>
                             <div property="reviewAspect" class="card card-body">
-                                <div class="rate2entroido ratingIndividual"></div>
+                                <div class="rate2entroido ratingIndividual"><meta property="ratingValue" content="5"></div>
                                 <p property="name" class="user"><strong>Fernando Marín</strong></p>
                                 <span property="ratingExplanation">¡Vivo cada día del año esperando que lleguen estas fiestas!</span>
                             </div>
