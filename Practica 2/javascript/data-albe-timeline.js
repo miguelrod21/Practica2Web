@@ -66,7 +66,7 @@ var dataCasa = [
     }];
 var dataMuseo = [
     {
-        time: '2020-10-04',
+        time: '2019-10-04',
         body: [{
             tag: 'h3',
             content: 'Historia Do Cinema',
@@ -110,7 +110,7 @@ var dataMuseo = [
             }]
     },
     {
-        time: '2020-11-12',
+        time: '2020-10-08',
         body: [{
             tag: 'h3',
             content: '' +
